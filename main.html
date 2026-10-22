@@ -30,7 +30,7 @@ Create a basic HTML structure with:
         ■ A "Edit" button to modify the item text.
 
     ● Remove Items:
-    ○ When the "Remove" button is clicked, the corresponding list item isdeleted from the list.
+    ○ When the "Remove" button is clicked, the corresponding list item is deleted from the list.
 
     ● Edit Items:
     ○ When the "Edit" button is clicked:
@@ -38,6 +38,16 @@ Create a basic HTML structure with:
         ■ Change the "Edit" button to a "Save" button.
         ■ When "Save" is clicked, update the text with the new input value and revert the button back to "Edit".
  -->
-    
+    <label for="itemName">Add Item:</label>
+    <input type = "text" id="itemName" placeholder = "Item Name">
+    <button type="button" id="addItem">Add</button><br>
+    <ul id="cart">
+        <li>
+            Apple
+            <button type="button" class="removeButton">Remove</button>
+            <button type="button" class="editButton">Edit</button>
+        </li>
+    </ul>
+    <script src="main.js"></script>
 </body>
 </html>
